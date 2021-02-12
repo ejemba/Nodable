@@ -114,7 +114,7 @@ add_library(NodableLib ${SOURCES})
 IF (WIN32)
     target_link_libraries(NodableLib LINK_PUBLIC ${SDL2_STATIC} )
 ELSE()
-    target_link_libraries(NodableLib PUBLIC ${SDL2_LIBRARIES})
+    target_link_libraries(NodableLib PUBLIC SDL2::SDL2)
 ENDIF()
 
 # link other libs
